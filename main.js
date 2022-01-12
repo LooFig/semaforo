@@ -7,11 +7,7 @@ const trafficLight = (event) => {
 }
 
 const nextIndex = () => {
-    if (colorIndex < 2) {
-        colorIndex++;
-    } else {
-        colorIndex = 0;
-    }
+    colorIndex < 2 ? colorIndex++ : colorIndex = 0;
 }
 
 const changeColor = () => {
@@ -29,21 +25,3 @@ const turnOn = {
 }
 
 buttons.addEventListener('click', trafficLight);
-
-/* function semVermelho () {
-    img.src = 'img/vermelho.png';
-}
-
-function semaforoAmarelo () {
-    img.src = 'img/amarelo.png';
-}
-
-function semVerde () {
-    img.src = 'img/verde.png';
-}
-
-function semAutomatico () {
-    img.src = 'img/vermelho.png';
-    img.src = 'img/amarelo.png';
-    img.src = 'img/verde.png';
-} */
